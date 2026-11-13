@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#f8f1e5">
+<meta name="description" content="A joyful engagement celebration of Apoorv Vishal and Shubhi Saxena.">
+<title>Apoorv & Shubhi | Engagement Invitation</title>
+<style>
+:root{--ivory:#fbf7ef;--cream:#f3e8d5;--gold:#b28a4a;--deep:#765b32;--ink:#59472f;--rose:#c98f87}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--ivory);color:var(--ink);font-family:Georgia,'Times New Roman',serif}
+body:before{content:"";position:fixed;inset:10px;border:1px solid rgba(178,138,74,.32);pointer-events:none;z-index:5}
+button,a{font:inherit}.hero{min-height:100svh;display:grid;place-items:center;padding:44px 20px;position:relative;overflow:hidden;background:radial-gradient(ellipse at 50% 35%,#fffdf8 0,#f7eddd 58%,#efe0c9 100%)}
+.glow{position:absolute;width:420px;height:420px;border-radius:50%;background:rgba(255,255,255,.5);filter:blur(45px);top:10%;left:50%;transform:translateX(-50%)}
+.card{width:min(100%,590px);text-align:center;position:relative;padding:clamp(32px,7vw,62px) 24px;border:1px solid rgba(178,138,74,.65);outline:1px solid rgba(178,138,74,.22);outline-offset:7px;background:rgba(255,252,246,.72);box-shadow:0 24px 80px rgba(111,79,35,.12);animation:rise 1.2s ease both}
+@keyframes rise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+.ornament{color:var(--gold);font-size:25px;letter-spacing:9px}.ganesh{font-size:44px;color:#a8793d;margin:12px 0 5px}.invited{font:11px Arial,sans-serif;letter-spacing:4px;text-transform:uppercase;color:#94764b;margin:12px 0 20px}
+h1{font-weight:400;font-size:clamp(42px,9vw,68px);line-height:1.02;color:#806039;margin:10px 0}
+.amp{font-style:italic;font-size:.72em;color:#c18b65;display:block;margin:5px 0}
+.subtitle{font:italic 17px Georgia,serif;color:#9b7951;margin:18px 0 25px}
+.rule{height:1px;width:70px;background:var(--gold);margin:22px auto}
+.date{font-size:20px;letter-spacing:1.5px;color:#765b32}.time{font:12px Arial,sans-serif;letter-spacing:3px;text-transform:uppercase;margin:10px 0 22px;color:#9b7951}
+.venue{font-size:18px;line-height:1.6}.address{font:12px Arial,sans-serif;line-height:1.7;color:#927d61;margin-top:5px}
+.host{font-style:italic;margin-top:30px;color:#8d7049}.actions{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:26px}
+.btn{border:1px solid var(--gold);background:transparent;color:#765b32;padding:12px 19px;text-decoration:none;font:11px Arial,sans-serif;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;transition:.25s}
+.btn.primary{background:#a98148;color:white}.btn:hover{background:#765b32;color:white}
+section{padding:76px 20px;text-align:center}.section-title{font-size:31px;font-weight:400;color:#806039;margin:0 0 12px}.muted{font:13px Arial,sans-serif;color:#987f5d;letter-spacing:.5px}
+.countdown{display:flex;justify-content:center;gap:clamp(12px,4vw,30px);margin:28px auto 0}.unit{min-width:58px}.num{font-size:35px;color:#9d7844}.unit small{display:block;font:10px Arial,sans-serif;letter-spacing:2px;color:#a58c6a;margin-top:4px}
+.bottom{background:#f3e8d5}.footer{padding:36px 20px 55px;text-align:center;color:#9a805c;font-style:italic}
+.music{position:fixed;right:22px;bottom:22px;z-index:8;border-radius:50%;width:52px;height:52px;background:#a98148;color:white;border:0;box-shadow:0 5px 18px #7c5b302e;cursor:pointer;font-size:20px}
+.petals{position:absolute;inset:0;pointer-events:none;overflow:hidden}.petal{position:absolute;top:-30px;width:9px;height:14px;border-radius:100% 0 100% 0;background:rgba(201,143,135,.35);animation:fall linear infinite}
+@keyframes fall{to{transform:translate3d(60px,110vh,0) rotate(420deg)}}
+@media(max-width:420px){.card{padding:34px 17px}.venue{font-size:16px}.btn{padding:11px 14px}}
+</style>
+</head>
+<body>
+<main>
+  <section class="hero" id="home">
+    <div class="glow"></div><div class="petals" id="petals"></div>
+    <article class="card">
+      <div class="ornament">✧ ❀ ✧</div>
+      <div class="ganesh" aria-label="Lord Ganesha">ॐ श्री गणेशाय नमः</div>
+      <p class="invited">With the blessings of the Almighty</p>
+      <p class="subtitle">Together with our families,</p>
+      <p class="invited">we joyfully invite you to celebrate the engagement of</p>
+      <h1>Apoorv Vishal<span class="amp">&</span>Shubhi Saxena</h1>
+      <div class="rule"></div>
+      <p class="date">22 · November · 2026</p>
+      <p class="time">6:30 PM onwards</p>
+      <div class="venue">Hotel Sita Kiran</div>
+      <div class="address">Opp. Hind Talkies, Civil Lines<br>Bareilly, Uttar Pradesh</div>
+      <p class="host">With best wishes<br><strong>N.K. Saxena &amp; Family</strong></p>
+      <div class="actions">
+        <a class="btn primary" href="https://maps.app.goo.gl/Ns2jmuiKsD9VXStb9?g_st=ac" target="_blank" rel="noopener">Get directions ↗</a>
+        <button class="btn" id="shareBtn" type="button">Share invitation</button>
+      </div>
+    </article>
+  </section>
+  <section>
+    <h2 class="section-title">Counting the moments</h2>
+    <p class="muted">Until we celebrate this beautiful beginning</p>
+    <div class="countdown" aria-live="polite">
+      <div class="unit"><span class="num" id="days">—</span><small>DAYS</small></div>
+      <div class="unit"><span class="num" id="hours">—</span><small>HOURS</small></div>
+      <div class="unit"><span class="num" id="minutes">—</span><small>MINUTES</small></div>
+      <div class="unit"><span class="num" id="seconds">—</span><small>SECONDS</small></div>
+    </div>
+  </section>
+  <section class="bottom">
+    <div class="ornament">✧ ❀ ✧</div>
+    <h2 class="section-title">Your presence is our present</h2>
+    <p class="muted">We look forward to celebrating with you.</p>
+    <div class="rule"></div>
+    <p class="host">Apoorv &amp; Shubhi</p>
+  </section>
+</main>
+<button class="music" id="musicBtn" aria-label="Play or pause music" title="Play music">♫</button>
+<audio id="bgMusic" loop preload="none">
+  <source src="aaj-sajeya.mp3" type="audio/mpeg">
+</audio>
+<script>
+const target = new Date('2026-11-22T18:30:00+05:30').getTime();
+function tick(){
+ const diff=Math.max(0,target-Date.now());
+ document.getElementById('days').textContent=Math.floor(diff/86400000);
+ document.getElementById('hours').textContent=String(Math.floor(diff/3600000)%24).padStart(2,'0');
+ document.getElementById('minutes').textContent=String(Math.floor(diff/60000)%60).padStart(2,'0');
+ document.getElementById('seconds').textContent=String(Math.floor(diff/1000)%60).padStart(2,'0');
+}
+tick();setInterval(tick,1000);
+const audio=document.getElementById('bgMusic'), musicBtn=document.getElementById('musicBtn');
+musicBtn.addEventListener('click',async()=>{
+ if(audio.paused){try{await audio.play();musicBtn.textContent='Ⅱ';musicBtn.title='Pause music'}catch(e){alert('Add your licensed aaj-sajeya.mp3 audio file to the project folder to enable music.')}}else{audio.pause();musicBtn.textContent='♫';musicBtn.title='Play music'}
+});
+document.getElementById('shareBtn').addEventListener('click',async()=>{
+ const data={title:'Apoorv & Shubhi — Engagement Invitation',text:'You are warmly invited to celebrate the engagement of Apoorv Vishal & Shubhi Saxena on 22 November 2026 at 6:30 PM onwards, Hotel Sita Kiran, Bareilly.',url:location.href};
+ if(navigator.share){try{await navigator.share(data)}catch(e){}}
+ else if(navigator.clipboard){await navigator.clipboard.writeText(location.href);alert('Invitation link copied!')}
+ else{prompt('Copy your invitation link:',location.href)}
+});
+const petals=document.getElementById('petals');
+for(let i=0;i<18;i++){const p=document.createElement('i');p.className='petal';p.style.left=Math.random()*100+'%';p.style.animationDuration=(9+Math.random()*13)+'s';p.style.animationDelay=(-Math.random()*18)+'s';p.style.opacity=.25+Math.random()*.5;petals.appendChild(p)}
+</script>
+</body>
+</html>
